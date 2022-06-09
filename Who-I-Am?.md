@@ -1,9 +1,13 @@
 <h1 align="center">Hi 👋, I'm Doğukan ERSAN</h1>
 <h3 align="center">A passionate frontend developer from Turkey</h3>
+<hr>
+<h3 align="center">My Social media Accounts:</h3>
+
+<p align="center"> <a href="https://linktr.ee/DogukanErsan/">  <img src="https://raw.githubusercontent.com/DogukanErsan/About-Me/main/200w.webp"></p>
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=dogukanersan&label=Profile%20views&color=0e75b6&style=flat" alt="dogukanersan" /> </p>
-<h3 align="center">My Stats</h3>
 <hr>
+<h3 align="center">My Stats:</h3>
 <br/>
 <p align="left">
   <a href="https://github.com/DogukanErsan/">
