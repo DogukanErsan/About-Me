@@ -1,174 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Doğukan ERSAN | Official Website</title>
-  <!-- Favicon -->
-  <link rel="icon" href="https://avatars0.githubusercontent.com/u/96001974" type="image/x-icon" />
-  <!-- Font Awesome icons -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-  <!-- Core theme CSS -->
-  <link rel="stylesheet" href="style.css">
-  <style>
-    /* Parallax pixel background animation */
-    .animated-background {
-      position: relative;
-      width: 100%;
-      height: 100vh; /* Adjust according to your needs */
-      overflow: hidden;
-    }
-    #stars1, #stars2, #stars3 {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      background-color: #fff;
-      box-shadow: 200px 200px 2px 1px #fff; /* Adjust the shadow properties according to your needs */
-    }
-    #stars1 {
-      top: 10%;
-      left: 5%;
-    }
-    #stars2 {
-      top: 25%;
-      left: 20%;
-    }
-    #stars3 {
-      top: 50%;
-      left: 70%;
-    }
-    /* Profile picture */
-    #profilePicture {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 10;
-    }
-    #profilePicture img {
-      width: 200px; /* Adjust according to your needs */
-      height: auto;
-      border-radius: 50%; /* Make the image circular */
-    }
-    /* Overlay popup */
-    .overlay {
-      display: none;
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-      z-index: 100;
-    }
-    .popup {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    }
-    .popup-photo img {
-      width: 100px; /* Adjust according to your needs */
-      height: auto;
-      border-radius: 50%; /* Make the image circular */
-    }
-    .popup-quote {
-      margin-top: 10px;
-      font-style: italic;
-    }
-    .popup-close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 24px;
-      cursor: pointer;
-    }
-    /* Social media links */
-    #links {
-      position: absolute;
-      bottom: 20px; /* Adjust according to your needs */
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .link {
-      margin: 0 10px; /* Adjust according to your needs */
-      color: #333; /* Link color */
-      text-decoration: none;
-    }
-    .link i {
-      margin-right: 5px; /* Adjust according to your needs */
-    }
-    /* Hashtag */
-    #hashtag {
-      position: absolute;
-      bottom: 10px; /* Adjust according to your needs */
-      left: 50%;
-      transform: translateX(-50%);
-      color: #333; /* Text color */
-    }
-  </style>
-</head>
-<body>
-  <!-- Parallax Pixel Background Animation -->
-  <section class="animated-background">
-    <div id="stars1"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-  </section>
-  <!-- End of Parallax Pixel Background Animation -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doğukan ERSAN | Official Website</title>
+    <!-- Favicon -->
+    <link rel="icon" href="https://avatars0.githubusercontent.com/u/96001974" type="image/x-icon" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Core theme CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-  <a id="profilePicture" href="#popup">
-    <img src="https://avatars0.githubusercontent.com/u/96001974" alt="Profile Picture">
-  </a>
+  <body>
+    <!-- Parallax Pixel Background Animation -->
+    <section class="animated-background">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </section>
+    <!-- End of Parallax Pixel Background Animation -->
 
-  <div class="overlay" id="popup">
-    <div class="popup">
-      <div class="popup-photo">
-        <a href="https://avatars0.githubusercontent.com/u/96001974" target="_blank">
-          <img src="https://avatars0.githubusercontent.com/u/96001974" alt="Profile Picture">
-        </a>
+    <a id="profilePicture" href="#popup">
+      <img src="https://avatars0.githubusercontent.com/u/96001974" alt="Profile Picture">
+    </a>
+
+    <div class="overlay" id="popup">
+      <div class="popup">
+        <div class="popup-photo">
+          <a href="https://avatars0.githubusercontent.com/u/96001974" target="_blank">
+            <img src="https://avatars0.githubusercontent.com/u/96001974" alt="Profile Picture">
+          </a>
+        </div>
+        <div class="popup-quote">
+          But... the sensation that I've lost something lingers for a longtime after I wake up.
+        </div>
+        <a class="popup-close" onclick="history.back()">&times;</a>
       </div>
-      <div class="popup-quote">
-        But... the sensation that I've lost something lingers for a longtime after I wake up.
-      </div>
-      <a class="popup-close" onclick="history.back()">&times;</a>
     </div>
-  </div>
 
-  <div id="userName">
-    @DogukanErsan
-  </div>
+    <div id="userName">
+      @DogukanErsan
+    </div>
 
-  <div id="links">
-    <a class="link" href="https://github.com/DogukanErsan" target="_blank">
-      <i class="fab fa-github">&nbsp;</i>Github
-    </a>
-    <a class="link" href="https://www.linkedin.com/in/DogukanErsan" target="_blank">
-      <i class="fab fa-linkedin">&nbsp;</i>Linkedin
-    </a>
-    <a class="link" href="https://www.facebook.com/DogukanErsan" target="_blank">
-      <i class="fab fa-facebook">&nbsp;</i>Facebook
-    </a>
-    <a class="link" href="https://www.instagram.com/dogukanersan0" target="_blank">
-      <i class="fab fa-instagram">&nbsp;</i>Instagram
-    </a>
-    <a class="link" href="https://twitter.com/ersan_dogukan" target="_blank">
-      <i class="fab fa-twitter">&nbsp;</i>Twitter
-    </a>
-    <a class="link" href="https://www.youtube.com/DogukanErsan" target="_blank">
-      <i class="fab fa-youtube">&nbsp;</i>YouTube
-    </a>
-  </div>
+    <div id="links">
+      <a class="link" href="https://github.com/DogukanErsan" target="_blank">
+        <i class="fab fa-github">&nbsp;</i>Github
+      </a>
+      <a class="link" href="https://www.linkedin.com/in/DogukanErsan" target="_blank">
+        <i class="fab fa-linkedin">&nbsp;</i>Linkedin
+      </a>
+      <a class="link" href="https://www.facebook.com/DogukanErsan" target="_blank">
+        <i class="fab fa-facebook">&nbsp;</i>Facebook
+      </a>
+      <a class="link" href="https://www.instagram.com/dogukanersan0" target="_blank">
+        <i class="fab fa-instagram">&nbsp;</i>Instagram
+      </a>
+      <a class="link" href="https://twitter.com/ersan_dogukan" target="_blank">
+        <i class="fab fa-twitter">&nbsp;</i>Twitter
+      </a>
+      <a class="link" href="https://www.youtube.com/DogukanErsan" target="_blank">
+        <i class="fab fa-youtube">&nbsp;</i>YouTube
+      </a>
+    </div>
 
-  <div id="hashtag">
-    ❤ #PoweredByDogukanErsan ❤
-  </div>
-</body>
+    <div id="hashtag">
+      ❤ #PoweredByDogukanErsan ❤
+    </div>
+  </body>
 </html>
